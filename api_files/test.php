@@ -87,7 +87,6 @@ $TITLE="
 <!DOCTYPE html>
       <html>
             <head>
-		<meta charset=”utf-8”/>
 		<title>api_server_testing</title>
             </head>
             <body>
