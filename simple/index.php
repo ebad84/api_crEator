@@ -10,13 +10,13 @@ if ($action=='insert'){//do reaction for inserting
 }
 
 
-if ($action=='delete'){//do reaction for deleting
+elseif ($action=='delete'){//do reaction for deleting
     $query = mysqli_query($db, "DELETE FROM your_table");
     echo (mysqli_error($db));
 }
 
 
-if ($action=='select'){//do reaction for selecting
+elseif ($action=='select'){//do reaction for selecting
     $a=0;
     $query = mysqli_query($db, "SELECT * FROM your_table ORDER BY id DESC");
     echo (mysqli_error($db));
@@ -24,7 +24,7 @@ if ($action=='select'){//do reaction for selecting
         if ($a==1){
             echo ',';
         }
-        echo $row['your_column'];
+        echo $row['column1'];
         $a=1;
     }
 }
